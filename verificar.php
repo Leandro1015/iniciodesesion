@@ -8,7 +8,7 @@
     $contrasenia = $_POST['contrasenia'];
 
     // Consultar la base de datos para verificar el usuario y la contraseña
-    $sql = "SELECT * FROM Usuarios WHERE nombre='$usuario' AND contrasenia='$contrasenia'";
+    $sql = "SELECT * FROM alumno WHERE nombre='$usuario' AND contrasenia='$contrasenia'";
     $resultado = $conexion->query($sql);
 
     if ($resultado->num_rows > 0) {
